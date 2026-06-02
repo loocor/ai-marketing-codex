@@ -21,6 +21,10 @@ echo ""
 if [ -n "$BASH_SOURCE" ] && [ "$BASH_SOURCE" != "bash" ] && [ -f "$BASH_SOURCE" ]; then
     SCRIPT_DIR="$(cd "$(dirname "$BASH_SOURCE")" && pwd)"
 else
+    SCRIPT_DIR=""
+fi
+
+if [ -z "$SCRIPT_DIR" ] || [ ! -f "$SCRIPT_DIR/skills/market/SKILL.md" ]; then
     echo -e "${YELLOW}Running remote install — cloning repository...${NC}"
     TEMP_DIR=$(mktemp -d)
     git clone --depth 1 https://github.com/loocor/ai-marketing-codex.git "$TEMP_DIR/ai-marketing-codex" 2>/dev/null
