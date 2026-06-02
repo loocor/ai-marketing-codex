@@ -192,7 +192,8 @@ rm -rf ~/.codex/skills/market*
 ## Maintaining This Fork
 
 This repository keeps the upstream AI Marketing Suite separate from the Codex
-adaptation layer. Before syncing upstream changes, read [GIT_SYNC.md](GIT_SYNC.md).
+adaptation layer. Before making repository changes, read [AGENTS.md](AGENTS.md).
+Before syncing upstream changes, read [GIT_SYNC.md](GIT_SYNC.md).
 
 ---
 
