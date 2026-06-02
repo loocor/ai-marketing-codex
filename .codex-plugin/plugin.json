@@ -1,0 +1,34 @@
+{
+  "name": "ai-marketing-codex",
+  "version": "0.1.0",
+  "description": "AI Marketing Suite adapted for Codex.",
+  "author": {
+    "name": "loocor"
+  },
+  "homepage": "https://github.com/loocor/ai-marketing-codex",
+  "repository": "https://github.com/loocor/ai-marketing-codex",
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "audit",
+    "seo",
+    "copywriting",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Marketing Codex",
+    "shortDescription": "Marketing audits, copy, SEO, funnels, proposals, and reports for Codex.",
+    "longDescription": "AI Marketing Codex adapts the AI Marketing Suite workflows for Codex skills, including website audits, copywriting, SEO analysis, competitor research, campaign planning, proposals, and client-ready reports.",
+    "developerName": "loocor",
+    "category": "Productivity",
+    "capabilities": [
+      "Marketing audits",
+      "SEO analysis",
+      "Copywriting",
+      "Competitor research",
+      "PDF reports"
+    ],
+    "defaultPrompt": "Use the market skill to audit a website and produce a client-ready marketing report."
+  }
+}

@@ -1,3 +1,8 @@
+---
+name: market-launch
+description: Use when Codex needs a product launch playbook, go-to-market plan, timeline, launch assets, channel strategy, risk checklist, and LAUNCH-PLAYBOOK.md.
+---
+
 # Product/Service Launch Playbook Generator
 
 ## Skill Purpose

@@ -1,3 +1,8 @@
+---
+name: market-brand
+description: Use when Codex needs to analyze brand voice, tone, messaging consistency, voice examples, writing guidelines, competitor voice comparison, and BRAND-VOICE.md.
+---
+
 # Brand Voice Analysis and Guidelines Generation
 
 ## Skill Purpose

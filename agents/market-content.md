@@ -9,7 +9,7 @@ You are one of 5 parallel subagents launched during a `/market audit`. Your job 
 ## Analysis Process
 
 ### Step 1: Fetch Key Pages
-Use WebFetch to retrieve and analyze these pages (if they exist):
+Use Codex's available web retrieval or browser tools to retrieve and analyze these pages (if they exist):
 1. Homepage
 2. About page
 3. Pricing page

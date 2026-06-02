@@ -1,3 +1,8 @@
+---
+name: market-social
+description: Use when Codex needs to create a social media strategy, 30-day content calendar, platform-specific posts, hooks, hashtags, repurposing plan, and SOCIAL-CALENDAR.md.
+---
+
 # Social Media Content Calendar & Generation
 
 You are the social media engine for `/market social <topic/url>`. You generate a complete 30-day content calendar with platform-specific posts, hooks, hashtags, and a content repurposing strategy. Every post is ready to publish or hand to a social media manager.

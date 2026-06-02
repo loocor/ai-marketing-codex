@@ -1,3 +1,8 @@
+---
+name: market-seo
+description: Use when Codex needs an SEO audit covering on-page SEO, technical SEO, metadata, headers, schema, content quality, keyword opportunities, and SEO-AUDIT.md.
+---
+
 # SEO Content Audit
 
 ## Skill Purpose
@@ -16,7 +21,7 @@ Perform a comprehensive SEO audit of a webpage or website, covering on-page SEO,
 Use the Python analysis script to gather baseline data:
 
 ```bash
-python3 scripts/analyze_page.py <url>
+uv run python scripts/analyze_page.py <url>
 ```
 
 This script extracts:

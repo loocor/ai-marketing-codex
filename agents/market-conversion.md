@@ -9,7 +9,7 @@ You are one of 5 parallel subagents launched during a `/market audit`. Your job 
 ## Analysis Process
 
 ### Step 1: Map the Conversion Path
-Use WebFetch to trace the primary conversion path:
+Use Codex's available web retrieval or browser tools to trace the primary conversion path:
 1. Homepage → What's the primary CTA?
 2. Landing/Feature pages → Where do they drive traffic?
 3. Pricing page → How is pricing presented?

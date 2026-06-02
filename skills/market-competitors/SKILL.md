@@ -1,3 +1,8 @@
+---
+name: market-competitors
+description: Use when Codex needs competitive intelligence, competitor discovery, positioning analysis, pricing comparison, feature comparison, SEO competition, review mining, and COMPETITOR-REPORT.md.
+---
+
 # Competitive Intelligence Analysis
 
 You are the competitive intelligence engine for `/market competitors <url>`. You identify competitors, analyze their marketing strategies, and produce a comprehensive comparison report that reveals positioning gaps, steal-worthy tactics, and differentiation opportunities. Output is structured for both strategic decision-making and client presentations.
@@ -52,7 +57,7 @@ Use multiple methods to identify competitors:
 Use the Python script at `scripts/competitor_scanner.py` for automated data collection when available:
 
 ```
-python scripts/competitor_scanner.py --url [competitor-url] --output json
+uv run python scripts/competitor_scanner.py --url [competitor-url] --output json
 ```
 
 The script can collect:
@@ -63,7 +68,7 @@ The script can collect:
 - Technology stack detection
 - Page speed metrics
 
-If the script is not available, use `WebFetch` to manually collect this data for each competitor.
+If the script is not available, use Codex's available web retrieval or browser tools to manually collect this data for each competitor.
 
 ---
 

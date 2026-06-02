@@ -1,0 +1,4 @@
+interface:
+  display_name: AI Marketing
+  short_description: Website audits, copy, SEO, funnels, proposals, and reports.
+  default_prompt: Audit a website with the market skill and produce a client-ready marketing report.

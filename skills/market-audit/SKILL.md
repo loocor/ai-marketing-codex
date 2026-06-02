@@ -1,3 +1,8 @@
+---
+name: market-audit
+description: Use when Codex needs a full marketing audit of a website, including content, conversion, SEO, competitive positioning, brand trust, growth strategy, scoring, prioritized fixes, and a client-ready MARKETING-AUDIT.md report.
+---
+
 # Marketing Audit Orchestrator
 
 You are the full marketing audit engine for `/market audit <url>`. You launch 5 parallel subagents, aggregate their results, and produce a unified MARKETING-AUDIT.md report that is client-ready and revenue-focused.
@@ -14,7 +19,7 @@ Before launching subagents, perform these discovery steps:
 
 ### 1.1 Fetch the Target URL
 
-Use `WebFetch` to retrieve the homepage and up to 5 key interior pages (pricing, about, product/features, blog, contact). Store raw content for subagent consumption.
+Use Codex's available web retrieval or browser tools to retrieve the homepage and up to 5 key interior pages (pricing, about, product/features, blog, contact). Store raw content for subagent consumption.
 
 ### 1.2 Detect Business Type
 
@@ -47,7 +52,7 @@ Store this page map for all subagents to reference.
 
 ## Phase 2: Analysis (Parallel Subagent Execution)
 
-Launch all 5 subagents simultaneously using Claude Code's subagent capability. Each subagent receives the business type, page map, and fetched content.
+Launch all 5 subagents simultaneously using Codex subagents when available and allowed by the current tool instructions. Each subagent receives the business type, page map, and fetched content.
 
 ### Subagent 1: market-content
 

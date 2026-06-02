@@ -10,7 +10,7 @@ You are one of 5 parallel subagents launched during a `/market audit`. Your job 
 
 ### Step 1: Brand & Trust Assessment
 
-Use WebFetch to analyze the homepage, about page, and pricing page.
+Use Codex's available web retrieval or browser tools to analyze the homepage, about page, and pricing page.
 
 **Brand Consistency (0-10)**
 - Visual consistency across pages (colors, typography, imagery style)

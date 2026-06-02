@@ -1,3 +1,8 @@
+---
+name: market-proposal
+description: Use when Codex needs to generate a marketing client proposal, scope, deliverables, pricing, timeline, situation analysis, and CLIENT-PROPOSAL.md.
+---
+
 # Client Proposal Generator for Marketing Services
 
 ## Skill Purpose

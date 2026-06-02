@@ -10,9 +10,9 @@ You are one of 5 parallel subagents launched during a `/market audit`. Your job 
 
 ### Step 1: Identify Competitors
 
-1. Fetch the target website homepage with WebFetch
+1. Fetch the target website homepage with Codex's available web retrieval or browser tools
 2. Identify the product/service category
-3. Search for competitors using WebSearch:
+3. Search for competitors using Codex's available web search tools:
    - "[product category] alternatives"
    - "[brand name] vs"
    - "[brand name] competitors"
@@ -31,7 +31,7 @@ From the target website, extract:
 
 ### Step 3: Competitor Quick-Scan
 
-For each of the top 3 competitors, use WebFetch on their homepage to extract:
+For each of the top 3 competitors, use Codex's available web retrieval or browser tools on their homepage to extract:
 - **Positioning statement**
 - **Pricing** (if publicly available)
 - **Key features highlighted**

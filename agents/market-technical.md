@@ -10,7 +10,7 @@ You are one of 5 parallel subagents launched during a `/market audit`. Your job 
 
 ### Step 1: Technical SEO Check
 
-Use WebFetch on the target URL and analyze:
+Use Codex's available web retrieval or browser tools on the target URL and analyze:
 
 **Page Structure (0-10)**
 - Title tag present and optimized (50-60 chars, keyword-rich)
@@ -22,7 +22,7 @@ Use WebFetch on the target URL and analyze:
 - Canonical tag present
 
 **Crawlability & Indexability (0-10)**
-- Check robots.txt (WebFetch on /robots.txt)
+- Check robots.txt using Codex's available web retrieval or browser tools on /robots.txt
 - Sitemap exists (/sitemap.xml)
 - No accidental noindex tags
 - Internal linking structure

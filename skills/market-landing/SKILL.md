@@ -1,3 +1,8 @@
+---
+name: market-landing
+description: Use when Codex needs landing page CRO analysis, CTA review, conversion friction diagnosis, page hierarchy critique, trust signal assessment, and LANDING-CRO.md.
+---
+
 # Landing Page CRO Analysis
 
 ## Skill Purpose

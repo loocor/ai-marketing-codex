@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="banner.svg" alt="AI Marketing Suite for Claude Code" width="100%">
+  <img src="banner.svg" alt="AI Marketing Suite for Codex" width="100%">
 </p>
 
-# AI Marketing Suite for Claude Code
+# AI Marketing Suite for Codex
 
-A comprehensive marketing analysis and automation skill system for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Audit any website's marketing, generate copy, build email sequences, create content calendars, analyze competitors, and produce client-ready PDF reports — all from your terminal.
+A comprehensive marketing analysis and automation skill system for Codex. Audit any website's marketing, generate copy, build email sequences, create content calendars, analyze competitors, and produce client-ready PDF reports — all from your terminal.
 
 **Built for entrepreneurs, agency builders, and solopreneurs who want to sell marketing services powered by AI.**
 
@@ -12,10 +12,10 @@ A comprehensive marketing analysis and automation skill system for [Claude Code]
 
 ## What This Does
 
-Type a command in Claude Code and get instant, actionable marketing analysis:
+Ask Codex to run a marketing workflow and get instant, actionable marketing analysis:
 
 ```
-> /market audit https://calendly.com
+> market audit https://calendly.com
 
 Launching 5 parallel agents...
 ✓ Content & Messaging Analysis     — Score: 72/100
@@ -37,21 +37,21 @@ Full report saved to MARKETING-AUDIT.md
 ### One-Command Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/zubair-trabzada/ai-marketing-claude/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/loocor/ai-marketing-codex/main/install.sh | bash
 ```
 
 ### Manual Install
 
 ```bash
-git clone https://github.com/zubair-trabzada/ai-marketing-claude.git
-cd ai-marketing-claude
+git clone https://github.com/loocor/ai-marketing-codex.git
+cd ai-marketing-codex
 ./install.sh
 ```
 
 ### Optional: PDF Report Support
 
 ```bash
-pip install reportlab
+uv run --with reportlab python -c "import reportlab"
 ```
 
 ---
@@ -60,29 +60,31 @@ pip install reportlab
 
 | Command | What It Does |
 |---------|-------------|
-| `/market audit <url>` | Full marketing audit with 5 parallel agents |
-| `/market quick <url>` | 60-second marketing snapshot |
-| `/market copy <url>` | Generate optimized copy with before/after examples |
-| `/market emails <topic>` | Generate complete email sequences |
-| `/market social <topic>` | 30-day social media content calendar |
-| `/market ads <url>` | Ad creative and copy for all platforms |
-| `/market funnel <url>` | Sales funnel analysis and optimization |
-| `/market competitors <url>` | Competitive intelligence report |
-| `/market landing <url>` | Landing page CRO analysis |
-| `/market launch <product>` | Product launch playbook |
-| `/market proposal <client>` | Client proposal generator |
-| `/market report <url>` | Full marketing report (Markdown) |
-| `/market report-pdf <url>` | Professional marketing report (PDF) |
-| `/market seo <url>` | SEO content audit |
-| `/market brand <url>` | Brand voice analysis and guidelines |
+| `market audit <url>` | Full marketing audit with 5 parallel agents |
+| `market quick <url>` | 60-second marketing snapshot |
+| `market copy <url>` | Generate optimized copy with before/after examples |
+| `market emails <topic>` | Generate complete email sequences |
+| `market social <topic>` | 30-day social media content calendar |
+| `market ads <url>` | Ad creative and copy for all platforms |
+| `market funnel <url>` | Sales funnel analysis and optimization |
+| `market competitors <url>` | Competitive intelligence report |
+| `market landing <url>` | Landing page CRO analysis |
+| `market launch <product>` | Product launch playbook |
+| `market proposal <client>` | Client proposal generator |
+| `market report <url>` | Full marketing report (Markdown) |
+| `market report-pdf <url>` | Professional marketing report (PDF) |
+| `market seo <url>` | SEO content audit |
+| `market brand <url>` | Brand voice analysis and guidelines |
 
 ---
 
 ## Architecture
 
 ```
-ai-marketing-claude/
-├── market/SKILL.md                     # Main orchestrator (routes all /market commands)
+ai-marketing-codex/
+├── .codex-plugin/plugin.json           # Codex plugin manifest
+├── skills/market/SKILL.md              # Codex-native entrypoint
+├── market/SKILL.md                     # Upstream orchestrator reference
 │
 ├── skills/                             # 14 sub-skills
 │   ├── market-audit/SKILL.md           # Full audit orchestration
@@ -100,7 +102,7 @@ ai-marketing-claude/
 │   ├── market-seo/SKILL.md             # SEO content audit
 │   └── market-brand/SKILL.md           # Brand voice analysis
 │
-├── agents/                             # 5 parallel subagents
+├── agents/                             # 5 parallel Codex subagent reference prompts
 │   ├── market-content.md               # Content & messaging analysis
 │   ├── market-conversion.md            # CRO & funnel optimization
 │   ├── market-competitive.md           # Competitive positioning
@@ -148,9 +150,9 @@ The full marketing audit scores websites across 6 dimensions:
 
 ## How It Works
 
-1. **You type a command** — e.g., `/market audit https://example.com`
-2. **Claude reads the skill files** — they tell Claude exactly how to analyze the site
-3. **5 subagents launch in parallel** — each one analyzes a different dimension
+1. **You ask Codex** — e.g., `market audit https://example.com`
+2. **Codex reads the skill files** — they tell Codex exactly how to analyze the site
+3. **5 Codex subagents can launch in parallel** — each one analyzes a different dimension
 4. **Python scripts run** — automated page analysis, competitor scanning
 5. **Results are compiled** — into a scored, prioritized, actionable report
 6. **Output is saved** — as a Markdown file or professional PDF
@@ -160,19 +162,19 @@ The full marketing audit scores websites across 6 dimensions:
 ## Use Cases
 
 ### For Agency Builders
-- Run `/market audit` on a prospect's website before a sales call
-- Generate `/market proposal` with specific findings and pricing
-- Deliver `/market report-pdf` as a professional client deliverable
+- Run `market audit` on a prospect's website before a sales call
+- Generate `market proposal` with specific findings and pricing
+- Deliver `market report-pdf` as a professional client deliverable
 
 ### For Solopreneurs
-- Use `/market copy` to optimize your own landing pages
-- Generate `/market emails` for your product launches
-- Build `/market social` calendars for consistent posting
+- Use `market copy` to optimize your own landing pages
+- Generate `market emails` for your product launches
+- Build `market social` calendars for consistent posting
 
 ### For Content Creators
-- Research competitors with `/market competitors`
-- Plan launches with `/market launch`
-- Analyze your funnel with `/market funnel`
+- Research competitors with `market competitors`
+- Plan launches with `market launch`
+- Analyze your funnel with `market funnel`
 
 ---
 
@@ -184,8 +186,7 @@ The full marketing audit scores websites across 6 dimensions:
 
 Or manually:
 ```bash
-rm -rf ~/.claude/skills/market*
-rm -f ~/.claude/agents/market-*.md
+rm -rf ~/.codex/skills/market*
 ```
 
 ---

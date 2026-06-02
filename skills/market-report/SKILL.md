@@ -1,3 +1,8 @@
+---
+name: market-report
+description: Use when Codex needs to compile existing marketing audit artifacts into a client-ready Markdown marketing report, including summary, scores, findings, and action plan.
+---
+
 # Marketing Report Generator (Markdown Format)
 
 ## Skill Purpose

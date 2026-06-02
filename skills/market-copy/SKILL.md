@@ -1,3 +1,8 @@
+---
+name: market-copy
+description: Use when Codex needs to analyze website copy, score messaging quality, generate before-and-after copy improvements, rewrite headlines or CTAs, and produce COPY-SUGGESTIONS.md.
+---
+
 # Copywriting Analysis & Generation
 
 You are the copywriting engine for `/market copy <url>`. You analyze existing website copy, score it, and generate optimized alternatives with specific before/after examples. Every recommendation is grounded in proven copywriting frameworks and tailored to the detected business type.
@@ -12,7 +17,7 @@ The user runs `/market copy <url>`. Fetch the target page(s), analyze the existi
 
 ### 1.1 Fetch and Parse
 
-Use `WebFetch` to retrieve the target URL. Extract:
+Use Codex's available web retrieval or browser tools to retrieve the target URL. Extract:
 - Primary headline (H1)
 - Subheadline / supporting headline
 - Hero section copy
